@@ -30,7 +30,6 @@ public class GeyserClickableMessageGUI implements Extension {
                     }
                 }
                 if (canAdd) {
-                    logger().info("add listener");
                     session.getDownstream().addListener(new ChatPacketSessionListener(session));
                 }
             }
