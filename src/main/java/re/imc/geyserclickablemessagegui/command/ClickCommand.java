@@ -20,4 +20,5 @@ public class ClickCommand extends GeyserCommand {
     public boolean isBedrockOnly() {
         return true;
     }
+
 }

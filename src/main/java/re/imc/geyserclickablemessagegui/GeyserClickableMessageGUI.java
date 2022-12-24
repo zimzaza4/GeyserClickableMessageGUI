@@ -8,6 +8,7 @@ import net.kyori.adventure.text.Component;
 import org.geysermc.event.subscribe.Subscribe;
 import org.geysermc.geyser.GeyserImpl;
 import org.geysermc.geyser.api.event.connection.ConnectionEvent;
+import org.geysermc.geyser.api.event.lifecycle.GeyserDefineCommandsEvent;
 import org.geysermc.geyser.api.event.lifecycle.GeyserPostInitializeEvent;
 import org.geysermc.geyser.api.extension.Extension;
 import org.geysermc.geyser.session.GeyserSession;
@@ -17,8 +18,8 @@ import re.imc.geyserclickablemessagegui.message.BedrockClickableMessage;
 public class GeyserClickableMessageGUI implements Extension {
 
     @Subscribe
-    public void onPostInitialize(GeyserPostInitializeEvent event) {
-        GeyserImpl.getInstance().commandManager().registerExtensionCommand(this, new ClickCommand());
+    public void onDefineCommands(GeyserDefineCommandsEvent event) {
+        event.register(new ClickCommand());
     }
 
     @Subscribe
