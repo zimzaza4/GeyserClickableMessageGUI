@@ -1,6 +1,7 @@
 # GeyserClickableMessageGUI
 
 Command:
-/geyser click
+`/geyser click`
+
 Permission:
-gcmg.command.click
+`gcmg.command.click`
