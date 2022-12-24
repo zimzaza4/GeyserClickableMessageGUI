@@ -1,0 +1,6 @@
+id: geyserclickablemessagegui
+name: GeyserClickableMessageGUI
+main: re.imc.geyserclickablemessagegui.GeyserClickableMessageGUI
+api: 1.0.0
+version: 1.0.1
+authors: [zimzaza4]
