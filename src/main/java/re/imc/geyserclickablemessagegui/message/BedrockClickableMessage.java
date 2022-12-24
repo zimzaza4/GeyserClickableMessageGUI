@@ -16,13 +16,11 @@ public class BedrockClickableMessage {
     public static void addMessage(GeyserSession session, Component message) {
         List<Component> textComponents = new ArrayList<>();
 
-        if (message instanceof TextComponent) {
-            if (message.children().size() > 0) {
-                textComponents = message.children();
+        if (message.children().size() > 0) {
+            textComponents = message.children();
 
-            } else {
-                textComponents.add(message);
-            }
+        } else {
+            textComponents.add(message);
         }
 
         for (Component component : textComponents) {
@@ -43,6 +41,10 @@ public class BedrockClickableMessage {
                     List<BedrockClickableMessage> messages;
                     if (playerMessages.containsKey(session)) {
                         messages = playerMessages.get(session);
+                        if (messages == null) {
+                            messages = new ArrayList<>();
+                            playerMessages.put(session, messages);
+                        }
                         if (messages.size() >= 25) {
                             messages.remove(0);
                         }
