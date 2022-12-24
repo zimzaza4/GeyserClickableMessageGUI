@@ -18,7 +18,6 @@ public class BedrockClickableMessage {
 
         if (message.children().size() > 0) {
             textComponents = message.children();
-
         } else {
             textComponents.add(message);
         }
@@ -41,10 +40,7 @@ public class BedrockClickableMessage {
                     List<BedrockClickableMessage> messages;
                     if (playerMessages.containsKey(session)) {
                         messages = playerMessages.get(session);
-                        if (messages == null) {
-                            messages = new ArrayList<>();
-                            playerMessages.put(session, messages);
-                        }
+
                         if (messages.size() >= 25) {
                             messages.remove(0);
                         }
@@ -52,7 +48,6 @@ public class BedrockClickableMessage {
                         messages.add(clickableMessage);
 
                     } else {
-
                         messages = new ArrayList<>();
                         messages.add(clickableMessage);
                         playerMessages.put(session, messages);
@@ -73,9 +68,9 @@ public class BedrockClickableMessage {
     public String getValue() {
         if (value != null) {
             if (!value.startsWith("/")) {
-                return "/" + value;
+                return value;
             }
-            return value;
+            return value.substring(1);
         }
         return "";
     }
