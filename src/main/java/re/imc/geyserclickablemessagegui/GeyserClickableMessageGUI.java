@@ -19,7 +19,7 @@ public class GeyserClickableMessageGUI implements Extension {
 
     @Subscribe
     public void onDefineCommands(GeyserDefineCommandsEvent event) {
-        event.register(new ClickCommand());
+        GeyserImpl.getInstance().commandManager().registerBuiltInCommand(new ClickCommand());
     }
 
     @Subscribe
