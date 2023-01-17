@@ -19,7 +19,7 @@
             <groupId>org.geysermc</groupId>
             <artifactId>Geyser</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <systemPath>${project.basedir}/libs/Geyser.jar</systemPath>
+            <systemPath>${project.basedir}/libs/Geyser-BungeeCord.jar</systemPath>
             <scope>system</scope>
         </dependency>
     </dependencies>

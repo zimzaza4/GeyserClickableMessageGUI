@@ -1,12 +1,9 @@
 package re.imc.geyserclickablemessagegui.form;
 
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.event.ClickEvent;
-import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
-
 
 import org.geysermc.cumulus.form.SimpleForm;
-import org.geysermc.cumulus.response.SimpleFormResponse;
+import org.geysermc.geyser.platform.bungeecord.shaded.net.kyori.adventure.text.event.ClickEvent;
+import org.geysermc.geyser.platform.bungeecord.shaded.net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.geysermc.geyser.session.GeyserSession;
 import re.imc.geyserclickablemessagegui.message.BedrockClickableMessage;
 

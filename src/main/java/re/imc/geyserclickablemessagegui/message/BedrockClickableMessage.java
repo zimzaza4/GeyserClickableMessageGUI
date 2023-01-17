@@ -1,8 +1,8 @@
 package re.imc.geyserclickablemessagegui.message;
 
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.TextComponent;
-import net.kyori.adventure.text.event.ClickEvent;
+import org.geysermc.geyser.platform.bungeecord.shaded.net.kyori.adventure.text.Component;
+import org.geysermc.geyser.platform.bungeecord.shaded.net.kyori.adventure.text.TextComponent;
+import org.geysermc.geyser.platform.bungeecord.shaded.net.kyori.adventure.text.event.ClickEvent;
 import org.geysermc.geyser.session.GeyserSession;
 
 import java.util.*;

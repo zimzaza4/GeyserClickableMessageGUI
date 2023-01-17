@@ -8,7 +8,7 @@ import re.imc.geyserclickablemessagegui.form.ClickableMessageForm;
 
 public class ClickCommand extends GeyserCommand {
     public ClickCommand() {
-        super("click", "show clickable message gui", "gcmg.command.click");
+        super("click", "Show clickable message gui.", "gcmg.command.click");
     }
 
     @Override
